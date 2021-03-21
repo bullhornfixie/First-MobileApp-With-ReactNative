@@ -1,6 +1,9 @@
 // How to create a React Component File 
 
-// Step1 - import libraries we need to create a component  
+// Step1 - import libraries we need to create a component 
+// Step2 - create a component  
+// Step3 - create a stylesheet 
+// Step4 - we need to export the component we just created so we can it elesewhere in our project
 
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
@@ -14,7 +17,6 @@ import { StyleSheet, Text } from 'react-native';
 // on first line we import whole library no {}
 // on second line we import pieces of the library using {}
 
-// Step2 - create a component 
 
 const ComponentsScreen = () => {
 
@@ -29,8 +31,6 @@ return <Text style={styles.textStyle}>This is the components screen</Text>
 
 };
 
-// Step3 - create a stylesheet 
-
 // it is used to create some styling to our component 
 // this stylesheet changes the font size of our text element 
 
@@ -44,8 +44,6 @@ const styles = StyleSheet.create({
 
   }
 });
-
-// Step4 - we need to export the component we just created so we can it elesewhere in our project
 
 export default ComponentsScreen;
 

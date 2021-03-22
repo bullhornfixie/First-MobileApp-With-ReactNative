@@ -1,12 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, Button } from 'react-native';
 
-const HomeScreen = () => { 
+const HomeScreen = ({ navigation }) => { 
   return (
   <View style={styles.container}>
     <Text style={styles.text}>Welcome To Indoor Jungle!</Text>
     <Text>{"\n"}</Text>
     <Image source={require('../../assets/cactus.png')} style={styles.img} />
+    <Button 
+      title="Enter" 
+      color="black"
+      onPress={() => navigation.navigate('Plants', {screen: 'PlantScreen'})}/>
   </View>
   );
 };
